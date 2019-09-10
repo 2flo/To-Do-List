@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="todo.css">
+    <title>ToDoList</title>
+</head>
+<body>
+    <div id="app">
+            <div class="container">
+                    <h1>Ma To-Do liste</h1>
+                    <div class="box one">
+                        <input type="searches" placeholder="Ajoutez ici un rappel">
+                        <button v-on:click="addTask" value="OK">Ok</button>
+                    </div>
+                    <div class="box two">
+                        <h2>A faire</h2>
+            
+                        <div class="task" v-for="search in searches">
+                            <input type="checkbox"> {{search.text}}
+                            <input v-model="newSearch" v-show="addTask">
+                        </div>
+                        
+                    </div>
+                </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>

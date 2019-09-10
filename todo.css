@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+input{
+    width: 200px;
+    margin-left: 555px;
+}
+
+.container{
+    background-color: grey;
+}
+
+.checkbox{
+    margin-left: 555px;
+    border: 1px solid white;
+}
