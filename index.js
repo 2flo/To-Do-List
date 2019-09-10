@@ -4,7 +4,7 @@ let container = new Vue({
         searches: [{text: 'Acheter du lait'},
         {text: 'Nourrir le chien'},
         {text: 'Ecouter les beattles'}],
-        newSearch : this.text
+        newSearch : ""
     },
     methods:{
         addTask: function(){
