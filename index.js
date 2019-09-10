@@ -4,13 +4,11 @@ let container = new Vue({
         searches: [{text: 'Acheter du lait'},
         {text: 'Nourrir le chien'},
         {text: 'Ecouter les beattles'}],
-        newSearch : ""
     },
     methods:{
         addTask: function(){
-            this.newSearch.push({ text: this.newSearch });
-            this.$refs.textbox.focus()
-            this.newSearch=""
+            this.searches.push({ text: this.newSearch });
+            this.newSearch= ""
         },
     }
 })

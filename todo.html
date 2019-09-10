@@ -18,7 +18,7 @@
                     <div class="box two">
                         <h2>A faire</h2>
             
-                        <div class="task" v-for="search in searches">
+                        <div class="task" v-for="(search,index) in searches" :key="index">
                             <input type="checkbox"> {{search.text}}
                         </div>
                         
