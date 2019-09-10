@@ -8,7 +8,9 @@ let container = new Vue({
     },
     methods:{
         addTask: function(){
-            newSearch.push({ searches: text });
-        }
+            this.newSearch.push({ text: this.newSearch });
+            this.$refs.textbox.focus()
+            this.newSearch=""
+        },
     }
 })
